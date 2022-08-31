@@ -15,7 +15,7 @@
 
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <maven.checkstyle.version>3.1.2</maven.checkstyle.version>
+        <maven.checkstyle.version>3.2.0</maven.checkstyle.version>
         <maven.failsafe.version>3.0.0-M7</maven.failsafe.version>
     </properties>
 
@@ -211,6 +211,7 @@
             <artifactId>scribejava-apis</artifactId>
             <version>8.3.1</version>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -235,7 +236,7 @@
                             <headerLocation>.checkstyle/java.header</headerLocation>
                             <suppressionsLocation>.checkstyle/suppressions.xml</suppressionsLocation>
                             <includeTestSourceDirectory>true</includeTestSourceDirectory>
-                            <encoding>UTF-8</encoding>
+                            <inputEncoding>UTF-8</inputEncoding>
                             <consoleOutput>true</consoleOutput>
                             <failsOnError>true</failsOnError>
                         </configuration>
